@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #A8F1FF;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.todo-app {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.input-section { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
+
+input {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.datetime-row { display: flex; gap: 5px; }
+.datetime-row input { flex: 1; }
+
+button#addBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.todo-item {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info { display: flex; flex-direction: column; gap: 4px; }
+.task-text { font-weight: 600; color: #333; }
+.task-time { font-size: 0.8rem; color: #666; }
+
+.completed .task-text { text-decoration: line-through; opacity: 0.6; }
+
+.actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.edit-btn { background: #ffc107; }
+.del-btn { background: #dc3545; color: white; }
